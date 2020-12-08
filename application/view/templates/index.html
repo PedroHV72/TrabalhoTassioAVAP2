@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>    
+        <meta charset="UTF-8">    
+        <title>Universidade de Vassouras - AVA</title>    
+        <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
+        <link rel="stylesheet" media="screen and (min-width: 900px)" href="windscreen.css"/>
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="smallscreen.css"/>
+    </head>
+    <body>    
+        <header>        
+            <img id="logo" src="{{url_for('static', filename = 'img/logo.png')}}">
+            <nav>            
+                <ul>                
+                    <li id="logoheader"><img src="{{url_for('static', filename = 'img/inicio.png')}}"></li>
+                    <li id="logoheader"><img src="{{url_for('static', filename = 'img/disciplinas.png')}}"></li>
+                    <li id="logoheader"><img src="{{url_for('static', filename = 'img/calendario.png')}}"></li>
+                    <li id="logoheader"><img src="{{url_for('static', filename = 'img/forum.png')}}"></li>
+                    <li id="logoheader"><img src="{{url_for('static', filename = 'img/config.png')}}"></li> 
+                    <li id="logoheader"><img src="{{url_for('static', filename = 'img/sair.png')}}"></li>
+                </ul>        
+            </nav>    
+        </header>    
+
+        <article>Corpo</article>    
+
+        <aside>Conteúdo paralelo</aside>    
+        
+        <footer>Rodapé</footer>
+    </body>
+</html>
