@@ -1,31 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>    
-        <meta charset="UTF-8">    
-        <title>Universidade de Vassouras - AVA</title>    
+    <head>
+        <meta charset="UTF-8">
+        <title>Universidade de Vassouras - AVA</title>
         <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
         <link rel="stylesheet" media="screen and (min-width: 900px)" href="windscreen.css"/>
         <link rel="stylesheet" media="screen and (min-width: 600px)" href="smallscreen.css"/>
     </head>
-    <body>    
-        <header>        
+    <body>
+        <header>
             <img id="logo" src="{{url_for('static', filename = 'img/logo.png')}}">
-            <nav>            
-                <ul>                
+            <nav>
+                <ul>
                     <li id="logoheader"><img src="{{url_for('static', filename = 'img/inicio.png')}}"></li>
                     <li id="logoheader"><img src="{{url_for('static', filename = 'img/disciplinas.png')}}"></li>
                     <li id="logoheader"><img src="{{url_for('static', filename = 'img/calendario.png')}}"></li>
                     <li id="logoheader"><img src="{{url_for('static', filename = 'img/forum.png')}}"></li>
-                    <li id="logoheader"><img src="{{url_for('static', filename = 'img/config.png')}}"></li> 
+                    <li id="logoheader"><img src="{{url_for('static', filename = 'img/config.png')}}"></li>
                     <li id="logoheader"><img src="{{url_for('static', filename = 'img/sair.png')}}"></li>
-                </ul>        
-            </nav>    
-        </header>    
+                </ul>
+            </nav>
+        </header>
 
-        <article>Corpo</article>    
-
-        <aside>Conteúdo paralelo</aside>    
+        <article>
+            <div id="area-titulo">
+                <div class="barra-pesquisa">
+                    <input type="text" name="box" placeholder="Digite algo para pesquisar...">
+                </div>
+                <h1 class="titulo">Seja bem vindo ao Ambiente Virtual de Aprendizagem, Usuário!</h1>
+            </div>
+            <div id="box1">
+                <img class="pdfzao" id="img" src="{{url_for('static', filename = 'img/pdf.png')}}">
+                <h1 id="h1">Todos as disciplinas</h1>
+                <p id="p">Visualização de todas as disciplinas</p>
+                <button id="botao">Acessar trilha</button>
+            </div>
+            <div id="box2">
+                <h1 id="titulozada">Estatísticas gerais</h1>
+                <img class="pdfzin" id="logo1" src="{{url_for('static', filename = 'img/pdf.png')}}">
+                <img class="pdfzin" id="logo2" src="{{url_for('static', filename = 'img/pdf.png')}}">
+                <img class="pdfzin" id="logo3" src="{{url_for('static', filename = 'img/pdf.png')}}">
+                <img class="pdfzin" id="logo4" src="{{url_for('static', filename = 'img/pdf.png')}}">
+                <p id="num1">1</p>
+                <p id="num2">2</p>
+                <p id="num3">3</p>
+                <p id="num4">4</p>
+                <p id="descricao1">Descrição 1</p>
+                <p id="descricao2">Descrição 2</p>
+                <p id="descricao3">Descrição 3</p>
+                <p id="descricao4">Descrição 4</p>
+            </div>
+            <div id="box3">
+                <img class="pdfzao" id="image" src="{{url_for('static', filename = 'img/pdf.png')}}">
+                <h1 id="titulozao">Sistemas Operacionais</h1>
+                <p id="professor">Felipe</p>
+                <p id="periodo">4</p>
+                <button id="botaozada">Acessar aula</button>
+            </div>
+            <div id="box4">
+                <img class="pdfzao" id="image" src="{{url_for('static', filename = 'img/pdf.png')}}">
+                <h1 id="titulozao2">Gestão estratégica de Pessoas</h1>
+                <p id="professor2">Claudenir</p>
+                <p id="periodo2">4</p>
+                <button id="botaozada2">Acessar aula</button>
+            </div>
+        </article>
         
-        <footer>Rodapé</footer>
+        <footer>Footer</footer>
     </body>
 </html>
