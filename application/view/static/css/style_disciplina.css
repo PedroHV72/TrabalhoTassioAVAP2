@@ -1,0 +1,93 @@
+body header{
+    background-color: #F5F5F5;
+    grid-area: header;
+    display: grid;
+    grid-template-areas: "titulo menu";
+    grid-template-columns: 50vh auto;
+    place-items: center;
+    justify-content: left;
+}
+
+body header h1{
+    grid-area: titulo;
+}
+
+body header nav{
+    grid-area: menu;
+}
+
+body header nav ul{
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 10vh;
+}
+
+#logo{
+    width: 65%;
+    height: 60%;
+}
+
+#logoheader{
+    width: 50px;
+    height: 70px;
+}
+
+.main{
+    display: flex;
+    padding: 32px;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.main .card1{
+    display: flex;
+    background-color: #F5F5F5;
+    height: 30%;
+}
+
+.main .card1 .image{
+    background-color: #803031;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.main .card1 .content-card1{
+    text-align: center;
+    width: 100%;
+}
+
+.main .card1 .image #ajustar{
+    width: 95%;
+}
+
+.main2{
+    display: flex;
+    padding: 32px;
+    flex-flow: row wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.main2 .card2{
+    display: flex;
+    background-color: #F5F5F5;
+    height: 30%;
+    width: 100%;
+}
+
+.main2 .card2 .content-card2{
+    text-align: center;
+    width: 100%;
+}
+
+.main2 .card2 .image2 #ajustar{
+    width: 95%;
+}
+
+.main2 .card2 .image2{
+    background-color: #803031;
+    border-radius: 5px;
+    width: 30%;
+}
