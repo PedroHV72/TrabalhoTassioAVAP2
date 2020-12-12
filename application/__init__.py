@@ -6,3 +6,4 @@ app = Flask(__name__, static_folder=os.path.abspath("application/view/static"), 
 
 
 from application.controller import home_controller
+from application.controller import disciplina_controller
