@@ -10,8 +10,8 @@
             <img id="logo" src="{{url_for('static', filename = 'img/logo.png')}}">
             <nav>
                 <ul>
-                    <li id="logoheader"><img src="{{url_for('static', filename = 'img/inicio.png')}}"></li>
-                    <a href="{{url_for('disciplina')}}"><li id="logoheader"><img src="{{url_for('static', filename = 'img/disciplinas.png')}}"></li></a>
+                    <a href="{{url_for('hello')}}"><li id="logoheader"><img src="{{url_for('static', filename = 'img/inicio.png')}}"></li></a>
+                    <li id="logoheader"><img src="{{url_for('static', filename = 'img/disciplinas.png')}}"></li>
                     <li id="logoheader"><img src="{{url_for('static', filename = 'img/calendario.png')}}"></li>
                     <li id="logoheader"><img src="{{url_for('static', filename = 'img/forum.png')}}"></li>
                     <li id="logoheader"><img src="{{url_for('static', filename = 'img/config.png')}}"></li>
@@ -36,9 +36,9 @@
                     <img id="ajustar" src="{{url_for('static', filename = 'img/pdf.png')}}">
                 </div>
                 <div class="content-card1">
-                    <h1 class="content-titulo1">Todas disciplinas</h1>
-                    <p class="content-descricao1">Acesse a trilha de todas as disciplinas</p>
-                    <button class="content-botao1">Acessar trilhas</button>
+                    <h2 class="content-titulo1">Modelagem Banco de Dados</h2>
+                    <p class="content-descricao1">Professor: Anrafel</p>
+                    <button class="content-botao1">Acessar trilha</button>
                 </div>
             </div>
             <div class="card1">
@@ -64,18 +64,6 @@
                     <button class="content2-botao">Clique aqui</button>
                 </div>
             </div>
-            <div class="card2">
-                <div class="image2">
-                    <img id="ajustar" src="{{url_for('static', filename = 'img/pdf.png')}}">
-                </div>
-                <div class="content-card2">
-                    <h1 class="content2-titulo">Interface com Usuário</h1>
-                    <p>Professor: Tássio Auad</p>
-                    <p>Período: 4</p>
-                    <button class="content2-botao">Clique aqui</button>
-                </div>
-            </div>
         </div>
-
     </body>
 </html>
