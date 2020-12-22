@@ -36,34 +36,44 @@
                     <img id="ajustar" src="{{url_for('static', filename = 'img/pdf.png')}}">
                 </div>
                 <div class="content-card1">
-                    <h2 class="content-titulo1">Modelagem Banco de Dados</h2>
-                    <p class="content-descricao1">Professor: Anrafel</p>
-                    <button class="content-botao1">Acessar trilha</button>
+                    <h2 class="content-titulo1">{{disciplina.get_nome_disciplina()}}</h2>
+                    <p class="content-descricao1">{{disciplina.get_professor()}}</p>
+                    <button class="content-botao1 botao">Acessar trilha</button>
                 </div>
             </div>
-            <div class="card1">
-                <div class="image">
-                    <img id="ajustar" src="{{url_for('static', filename = 'img/pdf.png')}}">
+            <div class="card3">
+                <div>
+                    <h1 class="content-card1">Estatísticas Disciplina</h1>
                 </div>
-                <div class="content-card1">
-                    <h1 class="content-titulo1">Lorem Ipsum</h1>
-                    <p class="content-descricao1">Lorem</p>
-                    <button class="content-botao1">Clique aqui</button>
+                <div class="agora-vai">
+                    <div class="agora-vaimrm">
+                        <h2 class="num">Progresso</h2>
+                        <h2 class="num">50%</h2>
+                    </div>
+                    <div class="agora-vaimrm">
+                        <h2 class="num">Trabalhos</h2>
+                        <h2 class="num">0</h2>
+                    </div>
+                    <div class="agora-vaimrm">
+                        <h2 class="num">Forum</h2>
+                        <h2 class="num">0</h2>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="main2">
+            {% for aula in aulas_lista %}
             <div class="card2">
                 <div class="image2">
                     <img id="ajustar" src="{{url_for('static', filename = 'img/pdf.png')}}">
                 </div>
                 <div class="content-card2">
-                    <h1 class="content2-titulo">Sistemas Operacionais</h1>
-                    <p class="content-descricao1">Professor: Felipe Melo</p>
-                    <p class="content-descricao1">Período: 4</p>
-                    <button class="content2-botao">Clique aqui</button>
+                    <h1 class="content2-titulo">{{aula.get_nomeAula()}}</h1>
+                    <p class="content-descricao1">{{aula.get_conteudoAula()}}</p>
+                    <button class="content-botao1 botao">Clique aqui</button>
                 </div>
             </div>
+            {% endfor %}
         </div>
     </body>
 </html>

@@ -72,6 +72,39 @@ input{
     width: 35%;
 }
 
+.main .card3{
+    background-color: #E9E7E7;
+    text-align: center;
+    border-radius: 4%;
+    height: 30%;
+    width: 35%;
+    padding-bottom: 45px;
+}
+
+.main .card3 .card-secundario .mini1 .subtitulo{
+    font-family: Arial;
+}
+
+.main .card3 .agora-vai{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.main .card3 .agora-vai .agora-vaimrm .num{
+    font-family: Arial;
+}
+
+.main .card3 .content-card1{
+    font-family: Arial;
+}
+
+.main .card3 .card-secundario{
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
 .main .card1 .image{
     background-color: #803031;
     border-radius: 15%;
@@ -84,26 +117,25 @@ input{
     width: 100%;
 }
 
-.main .card1 .content-card1 .content-botao1{
-    justify-content: right;
-}
-
 .main .card1 .image #ajustar{
     width: 95%;
 }
 
 .main .card1 .content-card1 .content-botao1{
-    position: fixed;
-    margin-left: 60px;
-    margin-top: 80px;
+    text-align: right;
+    margin-top: 50px;
 }
 
 .main .card1 .content-card1 .content-descricao1{
-    margin-left: -120px;
+    text-align: left;
+}
+
+.main2 .card2 .content-card2 .content-descricao1{
+    text-align: left;
 }
 
 .main .card1 .content-card1 .content-titulo1{
-    margin-left: -130px;
+    text-align: left;
 }
 
 .main2{
@@ -138,12 +170,79 @@ input{
     width: 50%;
 }
 
-.main2 .card2 .content-card2 .content2-botao{
-    position: fixed;
-    margin-left: 70px;
-    margin-top: 30px;
+.main2 .card2 .content-card2 .content-botao1{
+    text-align: right;
+    margin-top: 20px;
 }
 
 .main2 .card2 .content-card2 .content2-titulo{
-    margin-left: -130px;
+    text-align: left;
+}
+
+.area-informacao .area-titulo .titulo {
+    font-family: Arial;
+}
+
+.main .card1 .content-card1 {
+    font-family: Arial;
+}
+
+.main2 .card2 .content-card2{
+    font-family: Arial;
+}
+
+.main .card1 .content-card1 .content-botao1 {
+    font-family: arial;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.main .card1 .content-card1 .botao {
+    background: #803031;
+    color: #fff;
+    box-shadow: 0 5px 0 #803031;
+}
+
+.main .card1 .content-card1 .botao:hover {
+    background: #848484;
+    color: #fff;
+    box-shadow: 0 5px 0 #585858;
+}
+
+.main .card1 .content-card1 .botao:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+
+.main2 .card2 .content-card2 .content-botao1 {
+    font-family: arial;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.main2 .card2 .content-card2 .botao {
+    background: #803031;
+    color: #fff;
+    box-shadow: 0 5px 0 #803031;
+}
+
+.main2 .card2 .content-card2 .botao:hover {
+    background: #848484;
+    color: #fff;
+    box-shadow: 0 5px 0 #585858;
+}
+
+.main2 .card2 .content-card2 .botao:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
 }
